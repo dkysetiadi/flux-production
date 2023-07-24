@@ -1,0 +1,10 @@
+apiVersion: image.toolkit.fluxcd.io/v1beta2
+kind: ImagePolicy
+metadata:
+  name: payment
+spec:
+  imageRepositoryRef:
+    name: payment # Ngambil di image-repository.yaml metadata name
+  policy:
+    numerical:
+      order: asc
