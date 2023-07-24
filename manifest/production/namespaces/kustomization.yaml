@@ -5,4 +5,4 @@ resources:
   - core
   - backoffice
   - tools
-  - module
+  - flux-system
