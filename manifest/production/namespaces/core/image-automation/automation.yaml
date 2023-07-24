@@ -13,7 +13,7 @@ spec:
         branch: master
     commit:
       author:
-        email: dickysetiadi@gmail.com
+        email: dkysetiadi@gmail.com
         name: fluxcdbot
       messageTemplate: 'ada update image baru {{range .Updated.Images}}{{println .}}{{end}}'
     push:
