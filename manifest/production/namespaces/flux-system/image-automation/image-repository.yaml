@@ -3,7 +3,7 @@ kind: ImageRepository
 metadata:
   name: payment
 spec:
-  image: dkysetiadi/payment:8
+  image: dkysetiadi/payment
   interval: 1m
   secretRef:
     name: dockerconfigjson
