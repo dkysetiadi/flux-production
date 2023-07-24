@@ -4,3 +4,4 @@ namespace: core
 resources:
   - image-repository.yaml
   - image-policy.yaml
+  - automation.yaml

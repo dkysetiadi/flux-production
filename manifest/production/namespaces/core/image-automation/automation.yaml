@@ -1,0 +1,23 @@
+apiVersion: image.toolkit.fluxcd.io/v1beta1
+kind: ImageUpdateAutomation
+metadata:
+  name: automation
+spec:
+  interval: 1m
+  sourceRef:
+    kind: GitRepository 
+    name: flux-system # ngambil dari /cluster-production/flux-system/gotk-sync.yaml
+  git:
+    checkout:
+      ref:
+        branch: master
+    commit:
+      author:
+        email: dickysetiadi@gmail.com
+        name: fluxcdbot
+      messageTemplate: 'ada update image baru {{range .Updated.Images}}{{println .}}{{end}}'
+    push:
+      branch: master
+  update:
+    path: ./manifest/production/namespaces
+    strategy: Setters
