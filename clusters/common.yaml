@@ -4,7 +4,7 @@ metadata:
   name: production
   namespace: flux-system
 spec:
-  interval: 10m0s
+  interval: 1m
   path: ./manifest/production/namespaces
   prune: true
   sourceRef:
