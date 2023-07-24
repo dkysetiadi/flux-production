@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: dockerconfigjson
+type: kubernetes.io/dockerconfigjson
+data:
+  .dockerconfigjson: eyJhdXRocyI6eyJodHRwczovL2luZGV4LmRvY2tlci5pby92MS8iOnsidXNlcm5hbWUiOiJka3lzZXRpYWRpIiwicGFzc3dvcmQiOiJkY2tyX3BhdF8yTk92b01nZUVPZTFNTU9pTHZGTTBXYVduYWsiLCJhdXRoIjoiWkd0NWMyVjBhV0ZrYVRwa1kydHlYM0JoZEY4eVRrOTJiMDFuWlVWUFpURk5UVTlwVEhaR1RUQlhZVmR1WVdzPSJ9fX0=
+
+# kubectl create secret docker-registry dockerconfigjson --docker-username=dkysetiadi --docker-password=dckr_pat_2NOvoMgeEOe1MMOiLvFM0WaWnak --dry-run=client -o yaml
