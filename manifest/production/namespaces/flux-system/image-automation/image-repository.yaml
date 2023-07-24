@@ -5,4 +5,5 @@ metadata:
 spec:
   image: dkysetiadi/payment:8
   interval: 1m
-  provider: generic
+  secretRef:
+    name: dockerconfigjson
