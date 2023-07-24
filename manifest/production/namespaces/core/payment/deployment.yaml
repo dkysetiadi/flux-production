@@ -11,7 +11,9 @@ spec:
       labels:
         app: payment
     spec:
-      containers:
+      imagePullSecrets:
+      - name: dockerconfigjson
+      containers: 
       - name: payment
         image: dkysetiadi/payment:8
         resources:
